@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>RainDrops | Know Your Weather</title>
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="pro.js"></script>
+		<link rel="stylesheet" type="text/css" href="pro.css">
+	</head>
+	<body>
+		<div id="frontCover">
+			<img src="frontCover3.jpg">
+			<img src="frontCover2.jpg">
+			<img src="frontCover1.jpg">
+			<img src="frontCover0.jpg">
+			<div id="frontLayer"></div>
+			<div>
+				<div id="head">
+					<p>Raindrops</p>
+					<div id="buttons">
+						<button id="cel" class='newClass' onclick="addNewClass(0)">Celcius</button>
+						<button id="fer" onclick="addNewClass(1)">Fahrenheit</button>
+					</div>
+				</div>
+				<div id="search">
+					<p>Know Today's Weather With 7 Days Forecast</p>
+					<form>
+						<input type="text" placeholder="City Name">
+						<input type="submit" value="search">
+					</form>
+					<p id='result'></p>
+				</div>
+				<div id="body">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
