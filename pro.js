@@ -87,7 +87,7 @@ $(document).ready(function(){
 	function loadWeather(){
 
 		var apixu = "https://api.apixu.com/v1/current.json?key=%20b74b269fc49b4ccf9b8195510172101&q=";
-		var forecast = "http://api.apixu.com/v1/forecast.json?key=%20b74b269fc49b4ccf9b8195510172101&q=";
+		var forecast = "https://api.apixu.com/v1/forecast.json?key=%20b74b269fc49b4ccf9b8195510172101&q=";
 		$("#result").html("Searching, Please Wait...").slideDown();
 		city = $("input").eq(0).val();
 		apixu += city;
