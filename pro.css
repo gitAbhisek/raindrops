@@ -1,0 +1,264 @@
+body{
+	margin: 0px;
+	overflow-x: hidden; 
+}
+#frontCover{
+	width: 100%;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+#frontCover>img{
+	position: fixed;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	z-index: -1;
+}
+
+#frontLayer{
+	width:100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+}
+
+#head{
+	/*! text-align: center; */
+}
+
+#head p{
+	font-family: 'Pacifico', cursive;
+	font-size: 250%;
+	color: whitesmoke;
+	width: 20%;
+	text-align: center;
+	padding: 5px 0%;
+	border-radius: 10px;
+	margin: 20px 15px 0px;
+	text-shadow: 0px 0px 15px green,0px 0px 15px blue;
+	display: inline-block;
+}
+
+#buttons{
+	display: inline-block;
+	margin-left: 52%;
+	width: 20%;
+}
+
+#head button.newClass{
+	background-color: white;
+	color:black;
+}
+
+#head button{
+	display: inline-block;
+	background: transparent;
+	border: 1px solid white;
+	font-family: 'Aldrich', sans-serif;
+	color: white;
+	font-size: 1.4vw;
+	padding: 4px;
+	font-weight: bold;
+	border-radius: 0px;
+	margin-left: -5px;
+	width: 50%;
+	cursor: pointer;
+}
+
+
+#search{
+	text-align: center;
+	margin-top: 8%;
+}
+
+#search p{
+	color:white;
+	font-family: 'Aldrich', sans-serif;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 28px;
+	margin-bottom: 100px;
+	word-spacing: 10px;
+}
+
+input[type="text"]{
+	display: inline;
+	padding: 0px 20px 0px;
+	font-family: 'Aldrich', sans-serif;
+	font-size: 130%;
+	font-weight: bold;
+	margin: 0;
+	border: 1px solid whitesmoke;
+	border-radius: 10px 0 0 10px;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	height: 45px;
+	width: 15%;
+}
+
+input[type="submit"]{
+	display: inline;
+	margin: 0;
+	margin-left: -5px;
+	/*! padding: 0.7% 5px 0.7% 5px; */
+	font-family: 'Aldrich', sans-serif;
+	font-size: 130%;
+	border: 1px solid whitesmoke;
+	border-radius: 0 10px 10px 0;
+	background-color: white;
+	font-weight: bold;
+	height: 47px;
+}
+
+input[type="submit"]:hover{
+	cursor: pointer;
+}
+
+#body{
+	position: absolute;
+	top: 210px;
+	left: 120%;
+	height: 400px;
+	width:94%;
+	margin: 0 3%;
+	border-radius: 10px;
+	display: none;
+}
+
+#body img{
+	height: 220px;
+	width: 220px;
+}
+
+#current{
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 50%;
+	border-radius: 15px;
+	border: 1px solid whitesmoke;
+	margin: 0 auto;
+}
+
+#city_temp{
+	display: inline-block;
+	color: white;
+	font-family: 'Aldrich', sans-serif;
+	font-size: 25px;
+	/*!  */
+	width: 45%;
+	margin: 0 0 0 5%;
+	font-variant: small-caps;
+}
+
+#city_temp p:first-child{
+	font-variant: small-caps;
+	margin-top:10px;
+	font-size: 55px;
+	font-weight: bold;
+	border-bottom: 5px solid white;
+	margin-bottom: 0;
+}
+
+#city_temp #region{
+	margin: 0% 0 0 0;
+}
+
+#condition{
+	display: inline-block;
+	color: white;
+	font-family: 'Aldrich', sans-serif;
+	font-size: 20px;
+	width: 40%;
+	text-align: center;
+	margin-left: 5%;
+}
+
+#condition p{
+	margin-top: 0;
+	font-size: 25px;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+#extra{
+	font-family: 'Aldrich', sans-serif;
+	color:white;
+	font-variant: small-caps;
+	font-weight: bold;
+	border-top: 2px solid white;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 20px;
+}
+
+.info{
+	width: 33.3%;
+	text-align: center;
+	display: inline-block;
+}
+
+#body p#label{
+	color: white;
+	font-family: 'Aldrich', sans-serif;
+	font-size: 2.6vw;
+	font-weight: bold;
+	width: 21%;
+	margin: 5% auto 0;
+	background: white;
+	text-align: center;
+	border-radius: 60px;
+	/*!  */
+	padding: 10px 0;
+	text-shadow: 0 0 8px black;
+}
+
+#forecast{
+	width: 100%;
+	border-radius: 10px;
+	margin: 5% auto 0;
+	color: white;
+	font-family: 'Aldrich', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	font-variant: small-caps;
+	padding: 4% 0;
+}
+
+#separator{
+	border-bottom: 5px solid white;
+	margin: -2.7% 12%;
+}
+
+.days{
+	width: 250px;
+	text-align: center;
+	display: inline-block;
+	/*! border: 1px solid whitesmoke; */
+	margin: 2%;
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 10px;
+	padding: 0 0 10px 0;
+	box-shadow: 0 0 5px white;
+}
+
+
+#forecast .days .foreImage{
+	width: 100px;
+	height: 100px;
+}
+
+.forVerticalAlignment{
+	/*! vertical-align: 164%; */
+	margin: 5px 0px;
+}
+
+.fordays{
+	font-size: 30px;
+	margin: 5% 10%;
+	border-bottom: 3px solid white;
+	font-weight: bold;
+}
